@@ -7,14 +7,14 @@ const mongoose = require('mongoose')
 const productRoutes = require('./api/routes/products')
 const orderRoutes = require('./api/routes/orders')
 
+
 mongoose.connect("mongodb+srv://admin:" + process.env.MONGO_ATLAS_PW + "@node-rest-shop-osw6u.mongodb.net/test?retryWrites=true", {
     useNewUrlParser: true,
-    auth:{authdb:"admin"}
-}
+    auth: {
+        authdb: "admin"
+    }
+})
 
-// 
-
-)
 
 app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({
