@@ -22,7 +22,7 @@ npm run start
 ## To take into accuont
 - The server will be running in the port 3002
 - To test the API, use [Postman](https://www.getpostman.com/apps)
-- Some routes are protected, so you have to register first:
+- Some routes are protected, so you have to register and log in first:
 
 | Endpoint                                  | Method    | Body                                                     |
 | :---------------------------------------: | :-------: | :------------------------------------------------------: |
@@ -35,5 +35,5 @@ npm run start
 | __`http://localhost:3002/products/id`__   | DELETE    | { "token": "XXXX" }                                      |
 | __`http://localhost:3002/products`__      | PUT       | { "email": "test@gmail.com", "password": "password" }    |
 
-The __bold endpoints__ need a token generated when the user log in.
+The __bold endpoints__ need a token that is generated when the user logs in.
 
